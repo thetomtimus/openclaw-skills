@@ -1,43 +1,51 @@
 # OpenClaw Skills
 
-A curated collection of AI agent skills for OpenClaw.
+A curated collection of AI agent skills for [OpenClaw](https://github.com/openclaw/openclaw).
 
-## Available Skills
+## 📁 Categories
+
+### Marketing
+SEO, content optimization, and digital marketing skills.
 
 | Skill | Description |
 |-------|-------------|
-| [seo](./seo/) | Comprehensive SEO analysis — orchestrates all sub-skills below |
-| [seo-audit](./seo-audit/) | Full website SEO audit with parallel subagent delegation |
-| [seo-competitor-pages](./seo-competitor-pages/) | Generate SEO-optimized competitor comparison and alternatives pages |
-| [seo-content](./seo-content/) | Content quality and E-E-A-T analysis with AI citation readiness |
-| [seo-geo](./seo-geo/) | Generative Engine Optimization for AI search experiences |
-| [seo-hreflang](./seo-hreflang/) | Hreflang and international SEO audit, validation, and generation |
-| [seo-images](./seo-images/) | Image optimization analysis for SEO and performance |
-| [seo-page](./seo-page/) | Deep single-page SEO analysis |
-| [seo-plan](./seo-plan/) | Strategic SEO planning with industry-specific templates |
-| [seo-programmatic](./seo-programmatic/) | Programmatic SEO planning for pages generated at scale |
-| [seo-schema](./seo-schema/) | Schema.org structured data detection, validation, and generation |
-| [seo-sitemap](./seo-sitemap/) | XML sitemap analysis and generation with industry templates |
-| [seo-technical](./seo-technical/) | Technical SEO audit — crawlability, Core Web Vitals, security |
+| [seo](marketing/seo) | Comprehensive SEO analysis — orchestrates all sub-skills below |
+| [seo-audit](marketing/seo-audit) | Full website SEO audit with parallel subagent delegation |
+| [seo-competitor-pages](marketing/seo-competitor-pages) | Generate SEO-optimized competitor comparison and alternatives pages |
+| [seo-content](marketing/seo-content) | Content quality and E-E-A-T analysis with AI citation readiness |
+| [seo-geo](marketing/seo-geo) | Generative Engine Optimization for AI search experiences |
+| [seo-hreflang](marketing/seo-hreflang) | Hreflang and international SEO audit, validation, and generation |
+| [seo-images](marketing/seo-images) | Image optimization analysis for SEO and performance |
+| [seo-page](marketing/seo-page) | Deep single-page SEO analysis |
+| [seo-plan](marketing/seo-plan) | Strategic SEO planning with industry-specific templates |
+| [seo-programmatic](marketing/seo-programmatic) | Programmatic SEO planning for pages generated at scale |
+| [seo-schema](marketing/seo-schema) | Schema.org structured data detection, validation, and generation |
+| [seo-sitemap](marketing/seo-sitemap) | XML sitemap analysis and generation with industry templates |
+| [seo-technical](marketing/seo-technical) | Technical SEO audit — crawlability, Core Web Vitals, security |
 
-## Installation
+### Database
+Database optimization, query performance, and cost reduction skills.
 
-### Single skill
+| Skill | Description |
+|-------|-------------|
+| [neon-egress-optimizer](database/neon-egress-optimizer) | Audit and optimize database queries to minimize egress costs on Neon Postgres |
+
+## 🚀 Installation
+
 ```bash
-# Clone and copy the skill you want
-git clone https://github.com/thetomtimus/openclaw-skills.git
-cp -r openclaw-skills/seo ~/.openclaw/skills/
-```
-
-### All skills
-```bash
+# Clone the entire repo to your skills folder
 git clone https://github.com/thetomtimus/openclaw-skills.git ~/.openclaw/skills
+
+# Or copy just the skills you need
+git clone https://github.com/thetomtimus/openclaw-skills.git
+cp -r openclaw-skills/marketing/seo ~/.openclaw/skills/
+cp -r openclaw-skills/database/neon-egress-optimizer ~/.openclaw/skills/
 ```
 
-## Contributing
+## 📝 Submit Your Own
 
 Submit skills at [machina.directory/submit/skill](https://machina.directory/submit/skill)
 
-## License
+## 📄 License
 
 MIT
